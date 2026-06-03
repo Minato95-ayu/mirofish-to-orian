@@ -22,6 +22,20 @@ Orion follows a modern, decoupled Client-Server architecture designed for heavy 
 
 ## 🔄 2. Logic Workflow (End-to-End Execution)
 
+### 🗺️ Visual Mapping (Workflow Diagram)
+
+```mermaid
+graph TD
+    A[User Uploads Source Material] -->|PDF, TXT, MD| B(Flask API + PyMuPDF)
+    B --> C{GraphRAG Extractor}
+    C -->|LLM API| D[(Zep Cloud Memory Graph)]
+    D --> E[Autonomous Agent Generator]
+    E -->|camel-ai personas| F((Multi-Agent Simulation))
+    F <-->|camel-oasis interactions| F
+    F -->|Real-time State| G(Vue 3 + D3.js Frontend)
+    G -->|Visualizes| H[Prediction Report & Network]
+```
+
 The core lifecycle of an Orion simulation runs through the following distinct phases:
 
 ### Phase 1: Data Ingestion & Parsing
