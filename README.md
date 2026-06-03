@@ -22,7 +22,29 @@ Here is what makes **Orion** unique and highlights the new implementations:
 - **🌍 Multi-Agent Social Simulation**: Agents interact, persuade, and evolve within a simulated digital twin.
 - **📊 Prediction Reports**: Observes emergent social patterns to produce comprehensive future trajectory reports.
 
-## 🏗️ Architecture Stack
+## ⚡ Quick Tech Stack
+
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
+![Zep](https://img.shields.io/badge/Zep_Cloud-Memory-8A2BE2?style=for-the-badge)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-READY-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+## 🏗️ System Design & Architecture
+
+```mermaid
+graph TD
+    A[User Uploads Source Material] -->|HTTPS: PDF, TXT, MD| B(Flask API Layer + PyMuPDF)
+    B --> C{GraphRAG Extractor}
+    C -->|LLM API| D[(Zep Cloud Memory Graph)]
+    D --> E[Autonomous Agent Generator]
+    E -->|camel-ai personas| F((Multi-Agent Simulation))
+    F <-->|camel-oasis interactions| F
+    F -->|Real-time State| G(Vue 3 + D3.js Frontend)
+    G -->|Visualizes| H[Prediction Report & Network]
+```
 
 ### Frontend
 - **Framework**: Vue 3 & Vite
