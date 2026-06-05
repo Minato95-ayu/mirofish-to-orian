@@ -1,8 +1,8 @@
 services:
   orion:
-    image: ghcr.io/666ghj/mirofish:latest
+    image: ghcr.io/minato95-ayu/orion:latest
     # 加速镜像（如拉取缓慢可替换上方地址）
-    # image: ghcr.nju.edu.cn/666ghj/mirofish:latest
+    # image: ghcr.nju.edu.cn/minato95-ayu/orion:latest
     container_name: orion
     env_file:
       - .env

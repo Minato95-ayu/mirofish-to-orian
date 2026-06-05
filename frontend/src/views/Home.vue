@@ -5,7 +5,7 @@
         <span class="brand-mark">O</span>
         <span>Orion</span>
       </button>
-      <a class="ghost-link" href="https://github.com/666ghj/MiroFish" target="_blank" rel="noreferrer">
+      <a class="ghost-link" href="https://github.com/Minato95-ayu/orion" target="_blank" rel="noreferrer">
         Source
       </a>
     </header>
